@@ -52,5 +52,7 @@ jobs:
         run: ln -s ./docs/site-example ./site
       - name: Lint editorconfig
         run: make lint-editorconfig
+      - name: Dry run
+        run: editorconfig-checker -dry-run
       - name: test
         run: editorconfig-checker
